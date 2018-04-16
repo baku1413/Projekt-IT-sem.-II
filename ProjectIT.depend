@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1523899764 source:c:\users\bartek\desktop\it project\projectit\main.cpp
+1523905928 source:c:\users\bartek\desktop\it project\projectit\main.cpp
 	<iostream>
 	<fstream>
 	<sstream>

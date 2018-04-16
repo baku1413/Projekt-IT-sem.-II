@@ -18,8 +18,23 @@ int main(int arg, char *argumenty[])
     }
     else
     {
-    cout<<"odczytano plik"<<endl;
-    getch();
+        cout<<"odczytano plik"<<endl;
+        fstream plik;
+        plik.open(argumenty[1]);
+        int a=0;
+        int odcztint =0;
+        int suma=0;
+        float srednia=0;
+        while(plik>>odcztint)
+            {
+                suma=suma+odcztint;
+                a++;
+            }
+            srednia=suma/a;
+        cout<<"program ma: "<<a<<"linijek"<<endl;
+        cout<<"suma liczb to: "<<suma<<endl;
+        cout<<"srednia z liczb to: "<<srednia<<endl;
+        getch();
     }
 
 }
