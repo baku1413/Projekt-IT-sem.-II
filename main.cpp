@@ -8,12 +8,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 using namespace std;
-/*class Student
+class Student
 {
-    private std::string imie;
+    string imie;
+    string nazwisko;
+    string przedmiot;
+    unsigned int srednia;
     //....
     //std::list<float>
-};*/
+};
 
 
 
@@ -60,14 +63,15 @@ int main(int arg, char *argumenty[])
     else
     {
         ifstream myfile ("C:\\Users\\Bartek\\Desktop\\IT project\\ProjectIT\\Nowy dokument tekstowy.txt");
-        cout<<"odczytano plik"<<endl;
+        //ifstream myfile (argumenty[1]);
+        cout<<"IMIE|NAZWISKO|PRZEDM|OCENY       |SREDNIA"<<endl;
         /*
         string b = "1001";
         int wynik = atoi( b.c_str() );
         cout<<wynik+100<<endl;
         */
         string oceny;
-        int kol=0;
+        int kol=3;
         int i=0;
         int odcztint =0;
         std::string line;
@@ -84,14 +88,16 @@ int main(int arg, char *argumenty[])
                         s.push_back(line);
                     }
                     //new Student(result[0])
-                    std::cout<<s[kol]<<" ";
+                    std::cout<<s[0]<<" ";
+                    std::cout<<s[1]<<" ";
+                    std::cout<<s[2]<<" ";
+                    std::cout<<s[3]<<" ";
+                    //if (kol==3)
+                    //{
 
-                    if (kol==2)
-                    {
+                    cout<<"      Srednia:"<<SrZeStringa(s[3])<<endl;
 
-                    cout<<SrZeStringa(s[3])<<endl;
-
-                    }
+                    //}
                 }
             }
         }
