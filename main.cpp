@@ -67,6 +67,7 @@ int main(int arg, char *argumenty[])
         cout<<wynik+100<<endl;
         */
         string oceny;
+        int kol=0;
         int i=0;
         int odcztint =0;
         std::string line;
@@ -83,8 +84,9 @@ int main(int arg, char *argumenty[])
                         s.push_back(line);
                     }
                     //new Student(result[0])
-                    std::cout<<s[3]<<" ";
-                    if (i=3)
+                    std::cout<<s[kol]<<" ";
+
+                    if (kol==2)
                     {
 
                     cout<<SrZeStringa(s[3])<<endl;
