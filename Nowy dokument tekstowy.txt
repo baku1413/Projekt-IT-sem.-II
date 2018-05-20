@@ -1,4 +1,5 @@
-Adam Nowak 1
-Adam1 No1wak 1
-Adam2 Nowak 2
+Jan Kowalski Przyroda 123
+Jan Kowalski WF 456
+Adam Nowak IT 789
+Adam Nowak Matematyka 456
 

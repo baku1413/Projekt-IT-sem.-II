@@ -1,10 +1,14 @@
 # depslib dependency file v1.0
-1523905928 source:c:\users\bartek\desktop\it project\projectit\main.cpp
+1526819473 source:c:\users\bartek\desktop\it project\projectit\main.cpp
 	<iostream>
-	<fstream>
 	<sstream>
+	<fstream>
 	<cstdio>
 	<conio.h>
+	<list>
+	<vector>
+	<stdio.h>
+	<stdlib.h>
 
 1525784985 source:c:\users\teresa\desktop\it project\projectit\main.cpp
 	<iostream>

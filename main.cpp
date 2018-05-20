@@ -14,29 +14,61 @@ using namespace std;
     //....
     //std::list<float>
 };*/
+
+
+
+float SrZeStringa(string x)
+
+{
+    int k=0;
+    float srednia=0;
+    int j=0;
+    int n = 0;
+    char c='a';
+    string mySt = x;
+    int L = mySt.length()-1;
+    for(int i=0;i<=L;i++)
+    {
+    c = mySt.at(i);
+
+    if(isdigit(c))
+    {
+        n+=(c - '0');
+        j++;
+    }
+    }
+
+    srednia = n/j;
+    return srednia;
+}
+
+
+
+
 int main(int arg, char *argumenty[])
 
 {
+
+
     if(0)
     //if (arg<2)
     {
-            cout<<"¿aden plik nie zosta³ przeci¹gniêty"<<endl;
+            cout<<"zaden plik nie zostal przeciagniety"<<endl;
             getch();
 
     }
     else
     {
-        ifstream myfile ("C:\\Users\\Teresa\\Desktop\\IT project\\ProjectIT\\Nowy dokument tekstowy.txt");
-        //
+        ifstream myfile ("C:\\Users\\Bartek\\Desktop\\IT project\\ProjectIT\\Nowy dokument tekstowy.txt");
         cout<<"odczytano plik"<<endl;
+        /*
         string b = "1001";
         int wynik = atoi( b.c_str() );
         cout<<wynik+100<<endl;
-        //
-        int a=0;
+        */
+        string oceny;
+        int i=0;
         int odcztint =0;
-        int suma=0;
-        float srednia=0;
         std::string line;
         if (myfile.is_open())
         {
@@ -51,7 +83,13 @@ int main(int arg, char *argumenty[])
                         s.push_back(line);
                     }
                     //new Student(result[0])
-                    std::cout<<s[1]<<endl;
+                    std::cout<<s[3]<<" ";
+                    if (i=3)
+                    {
+
+                    cout<<SrZeStringa(s[3])<<endl;
+
+                    }
                 }
             }
         }
@@ -65,3 +103,7 @@ int main(int arg, char *argumenty[])
     }
 
 }
+
+
+
+
