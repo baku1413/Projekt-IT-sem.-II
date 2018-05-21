@@ -10,14 +10,20 @@
 using namespace std;
 class Student
 {
+   public:
     string imie;
     string nazwisko;
     string przedmiot;
     unsigned int srednia;
-    //....
-    //std::list<float>
+    //super u¿yteczna klasa polecam
 };
 
+class MurzynLiczacySrednia
+{
+public:
+
+string oceny;
+float srednia;
 
 
 float SrZeStringa(string x)
@@ -46,11 +52,42 @@ float SrZeStringa(string x)
 }
 
 
+};
+
+/*
+float SrZeStringa(string x)
+
+{
+    int k=0;
+    float srednia=0;
+    int j=0;
+    int n = 0;
+    char c='a';
+    string mySt = x;
+    int L = mySt.length()-1;
+    for(int i=0;i<=L;i++)
+    {
+    c = mySt.at(i);
+
+    if(isdigit(c))
+    {
+        n+=(c - '0');
+        j++;
+    }
+    }
+
+    srednia = n/j;
+    return srednia;
+}
+
+*/
 
 
 int main(int arg, char *argumenty[])
 
+
 {
+
 
 
     if(0)
@@ -70,6 +107,9 @@ int main(int arg, char *argumenty[])
         int wynik = atoi( b.c_str() );
         cout<<wynik+100<<endl;
         */
+
+        MurzynLiczacySrednia BlackNiBBa;
+
         string oceny;
         int kol=3;
         int i=0;
@@ -95,7 +135,7 @@ int main(int arg, char *argumenty[])
                     //if (kol==3)
                     //{
 
-                    cout<<"      Srednia:"<<SrZeStringa(s[3])<<endl;
+                    cout<<"      Srednia:"<<BlackNiBBa.SrZeStringa(s[3])<<endl;
 
                     //}
                 }
